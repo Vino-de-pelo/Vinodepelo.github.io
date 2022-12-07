@@ -1,0 +1,1100 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    src: url(static/Comfortaa-Medium.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'noto sans mono' ;
+    margin: 0;
+    zoom:110%;
+}
+h1{
+    font-size: 4.0em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    h3{font-size: 2.0em;}
+    h4{font-size: 1.8em;}
+    h5{font-size: 1.5em;}
+    p{font-size: 1.3;}
+    a{font-size: 1.2em;}
+
+    #hero button{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 5px 30px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0,5);
+        box-shadow: 2px 2px 10px rgba( 255,255,255, 245);
+        color: white;
+        background-color:darkslateblue;
+    }
+    #hero button:hover{
+     background-color:rgb(44, 14, 51);   
+    }
+    .conteiner{
+       max-width: 1400px ;
+       margin:auto; 
+    }
+    header{
+        background-color: rgb(11, 1, 1);
+    }
+    header .logo{
+        color: white;
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        font-size: 1.6em;
+
+    }
+    header .conteiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+
+    }
+    .conteiner p{
+        font-size: 2.2em;
+    }
+    header a{
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color:white ;
+    }
+    header a:hover{
+        color:rgb(73, 72, 71);
+    }
+    #hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        color: white;
+        background-image: linear-gradient(
+          0deg,
+          rgba(0,0,0,0.3),
+          rgba(0,0,0,0.3) 
+        )
+        ,url(foto\ principal.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    #hero h1{
+        position:absolute;
+        text-shadow:0 0 30px rgb(65, 2, 43);
+        bottom: 280px;
+        font-family:sans-serif;
+    }
+    #hero .logoprincipal{
+        position:relative;
+        top: 300px;
+        
+    }
+    #hero .logochico{
+        position: relative;
+        top: 425px;
+        width:40px;
+        right: 40px;
+        height: 40px;
+        padding:1px;
+        padding-right: 8px;
+    }
+    #hero .logocostado{
+        position: relative;
+        top: 366px;
+        left: 50px;
+        width:40px;
+        height: 40px;
+        padding:2px 2px 8px;  
+    }
+    #hero .fotoinsta{
+        position: relative;
+        width: 50px;
+        background-size: cover;
+        height: 50px;
+        border-radius: 14px;
+        right: 5px;
+        bottom: 7px;
+    }
+    #hero .fotofacebook{
+        position: relative;
+        width: 50px;
+        background-size: cover;
+        height: 50px;
+        border-radius: 14px;
+        right: 6px;
+        bottom: 7px;
+    }
+    #servicios{
+        margin: 0;
+        background-image: url(fondito\ servicios.png);
+        color: white;
+        text-align: center;
+        padding: 60px 15px;
+    }
+    #servicios h2{
+        margin: 0;
+        font-size: 2.8em; 
+        padding-bottom: 22px;   
+        text-shadow: 4px 2px 5px rgb(11, 11, 192)
+    }
+    
+    /*
+    .carta:first-child{
+        background-image: url(corte.png);
+        width: 370px;
+        height: 360px;
+        border-radius: 10px;
+    }
+    .carta:nth-child(2){
+        background-image: url(color\ completo.jpeg);
+    }
+    .carta:nth-child(3){
+        background-image: url(trabajos\ tecnicos.jpeg);
+    }
+    .carta4{
+        background-image: url(barba.jpeg);
+    }
+   
+    .conteiner .carta4 .carta5 .carta6{
+        background-position: center;
+        background-size: cover;
+       
+    }*/
+   
+    
+    .conteiner .cartas h3{
+        margin: 10px;
+        font-size: 2.2em;
+        color:rgba(216, 185, 9, 0.552);
+        font-weight: bold;
+        display: flex;
+        padding-left: 130px;  
+    }
+    .carta .fotocorte{
+        display: flex;
+        width: 340px;
+        height: 320px;
+        border-radius: 20px;
+        margin-left: 20px;
+        display: flex;
+        filter: drop-shadow(0px 5px 4px rgb(255, 255, 255));
+    }
+    .conteiner .cartas p{
+        display: flex;
+        text-align: center;   
+        flex-direction:column; 
+        font-size: 1.4em;
+        margin: 10px;  
+        margin-top: 25px; 
+    }
+    
+    .conteiner .fotocolorcompleto{
+        width: 330px;
+        height: 320px;
+        border-radius: 20px;
+        margin-left: 20px;
+        display: flex;
+        filter: drop-shadow(0px 4px 5px rgb(255, 255, 255));
+    }
+    .conteiner .cartas .colorcomple{
+        padding-left: 60px;
+    }
+    .conteiner .fototrabajos{
+        width: 320px;
+        height: 350px;
+        border-radius: 20px;
+        margin-left: 20px;
+        display: flex;
+        filter: drop-shadow(0px 5px 5px rgb(4, 82, 38)); 
+    }
+    .conteiner .cartas .trabajostec{
+        padding-left: 40px;
+    }
+    .conteiner .fotobarba{
+        width: 330px;
+        height: 350px;
+        border-radius: 18px;
+        margin-left: 20px;
+        display: flex;
+        filter: drop-shadow(0px 5px 5px rgb(13, 52, 205)); 
+    }
+    .conteiner  .fotomaquillaje{
+        width: 330px;
+        height: 330px;
+        border-radius: 15px;
+        margin-left: 20px;
+        display: flex;
+        filter: drop-shadow(0px 5px 5px rgb(2, 171, 187)); 
+    }
+    .conteiner .cartas .maquillaje{
+        padding-left: 95px;
+    }
+    .conteiner .fotopeinado{
+        width: 330px;
+        height: 330px;
+        border-radius: 15px;
+        margin-left: 20px;
+        display: flex;
+        filter: drop-shadow(0px 5px 5px rgb(169, 14, 169)); 
+    }
+    .conteiner .cartas .peinado{
+        padding-left: 105px;
+    }
+    .conteiner .fotocolor22{
+        width: 330px;
+        height: 330px;
+        border-radius: 15px;
+        margin-left: 20px;
+        display: flex;
+        filter: drop-shadow(0px 5px 5px rgb(27, 93, 246)); 
+        
+    }
+    .conteiner .fotocorte22{
+        width: 330px;
+        height: 335px;
+        border-radius: 15px;
+        margin-left: 20px;
+        display: flex;
+        filter: drop-shadow(0px 5px 5px rgb(130, 29, 174)); 
+    }
+    .conteiner .fotonutricion{
+        width: 320px;
+        height: 390px;
+        border-radius: 10px;
+        margin-left: 20px;
+        display: flex;
+        filter: drop-shadow(-1px 2px 5px rgb(19, 155, 39)); 
+    }
+    .conteiner .nutricion h3{
+        margin-left:-20px;
+    } 
+    .conteiner .fotoalisado{
+        width: 320px;
+        height: 390px;
+        border-radius: 10px;
+        margin-left: 20px;
+        display: flex;
+        filter: drop-shadow(-1px 2px 5px rgb(19, 155, 39));
+    }
+    .conteiner .alisado h3{
+        margin-left: -10px;
+    }
+    #nuestrolugar{
+      background-image: url(fondo\ nuestrolugar.jpg);
+    }
+    #nuestrolugar .conteiner{ 
+         display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 20px;
+        padding-bottom: 20px;      
+    }
+    #nuestrolugar h2{
+        font-size: 3.6em;
+        margin-bottom: 20px;
+        text-shadow:  2px 2px 4px rgb(72, 68, 68);
+        font-weight: bold;
+        color: rgb(124, 124, 142);
+    }
+    #nuestrolugar h4{
+        font-size: 2.0em;
+        color: rgb(20, 145, 165);
+        margin-top: 5px;
+        
+    }
+    #nuestrolugar .conteiner .primerafila{
+        display:flex;
+        flex-direction:column ;
+    }
+    #nuestrolugar .conteiner .segundafila{
+        display: flex;
+        flex-direction: column;
+    }
+    #nuestrolugar .conteiner .tercerafila{
+        display: flex;
+        flex-direction: column;
+    }
+    #nuestrolugar .conteiner .cuartafila{
+        display: flex;
+        flex-direction: column;
+    }
+    #nosotros{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.8),
+            rgba(0,0,0,0.8) 
+          ),
+         url(fondo\ nosotros.png);
+         
+    }
+    #nosotros .conteiner h2{
+        text-shadow: 1px 4px 2px rgb(160, 21, 21);
+        font-weight: 600;
+    }
+    #nosotros .conteiner{
+        color:rgb(255, 253, 253);
+        text-align: center;
+        justify-content: center ; 
+        display: flex;
+        flex-direction: column;
+        padding: 10px 18px;
+        margin: 0;
+        font-weight:bold ;
+    }
+    #nosotros .conteiner p{
+        font-size: 1.3em;
+        padding-bottom:25px;
+        margin: 0;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        text-shadow: 2px 4px 5px rgb(1, 1, 1);
+    }
+    #nosotros .conteiner h4{
+        margin:10px 5px;
+        text-shadow: 0px 2px 8px rgb(154, 13, 13);
+    }
+    #contacto {
+        background-color: rgb(33, 33, 36);
+        color: rgb(21, 153, 187);
+        margin: 0;
+        
+    }
+    #contacto .conteiner .h41{
+        color: rgb(132, 40, 178);
+        text-shadow: 2px 2px 2px rgb(76, 23, 199)
+    }
+    #contacto .conteiner .h42{
+        color: rgb(210, 40, 60);
+        text-shadow: 2px 3px 2px rgb(120, 14, 21)
+    }
+    #contacto .conteiner .h43{
+        color: rgb(178, 212, 27);
+        text-shadow: 2px 3px 2px rgb(86, 92, 11)
+    }
+    #contacto .conteiner .h51{
+        color: rgb(47, 171, 25);
+        text-shadow: 2px 3px 2px rgb(13, 103, 33)
+    }
+    #contacto .conteiner{
+        text-align: center ;
+        justify-content:center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0;
+    }
+    #contacto h3{
+        font-size: 2.5em;
+        font-weight: bold;
+        margin: 0;
+        padding-top: 30px;
+        text-shadow: 4px 5px 8px rgb(0, 0, 0);
+    }
+    #contacto p{
+        font-size: 1.3em;
+        margin: 2px 5px;
+        padding-bottom: 20px;
+    }
+    #contacto h5{
+        margin: 5px;
+        padding-top: 50px;
+    }
+    footer{
+        background-color: black;
+        height: 15vh;
+    }
+    
+    footer .conteiner .instagram{
+        position: relative;
+        margin-left: 5px;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        right: 12px;
+        bottom: 5px;
+    }
+    footer .conteiner .facebook{
+        position: relative;
+        right: 12px;
+        margin-left: 5px;
+        border-radius: 8px;
+        width: 40px;
+        height: 40px;
+        bottom:2px ;
+    }
+    footer .conteiner .whatsapp{
+        position: relative;
+        width: 50px;
+        background-size: cover;
+        height: 50px;
+        border-radius: 26px;
+        right: 10px;
+        bottom: 5px;;
+    
+        
+    }
+    footer .conteiner h1{
+        color: white;
+        justify-content: center;
+        text-align: center ;
+        font-size: 1.3em;
+        margin-top: 40px;
+        
+    }
+    footer .conteiner .redes3{
+     position: relative;
+     margin: 15px 0px;
+     padding-bottom:20px; 
+     left: 210px;
+     border-radius: 29px;
+     width: 40px;
+     height: 40px;
+    }
+    footer .conteiner .redes2{
+        position: relative;
+        margin: 15px 0px;
+        padding-bottom:20px; 
+        left: 140px;
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+       }
+       footer .conteiner .redes1{
+        position:relative; 
+        margin:15px 0px;
+        padding-bottom: 20px;
+        left: 70px;
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+       }
+       
+      
+        footer .conteiner form{
+            display:contents;
+        }
+       
+
+       
+       @media (min-width: 900px){
+
+      
+        
+        header .conteiner{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        header .logo{
+            font-size: 2.5em;
+        }
+        header nav{
+            flex-direction: row;
+            padding: 0;
+            
+        }
+
+        #hero{
+            background-size:1290px;
+            background-repeat: inherit;
+            height: 82vh;
+        }
+        #hero h1{
+            top:80px;
+        }
+        #hero .logoprincipal{
+            top: 243px;
+        }
+        #hero .logochico{
+            top: 395px;
+            right: 65px;
+            width: 35px;
+            height: 35px;
+        }
+        #hero .logocostado{
+            top: 337px;
+            left: 62px;
+            width: 35px;
+            height: 35px;
+        }
+        #hero .fotoinsta{
+            width: 48px;
+            height: 48px;
+        }
+        #hero .fotofacebook{
+            width: 47px;
+            height: 47px;
+        }
+        #servicios h2{
+        font-size: 3.6em;
+        }
+        #servicios .cartas{
+            margin-left:-40px;
+        }
+        #servicios .cartas .cartascorte{
+            display: flex;
+            
+
+        }
+        #servicios .cartas .Corte{
+            display: flex;
+            flex-direction: column;
+            margin-left:-20px;
+            
+        }
+        #servicios .cartas .cartacolor{
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px;  
+        }
+        .conteiner .cartas .Corte p{
+            margin-left: 120px;
+            margin-right: 10px;
+        }
+        .conteiner .cartas .cartacolor p{
+           margin-left: 170px;
+           margin-right: 0px;
+        }
+        #servicios .cartas .carta .fotocorte{
+        margin-left: 120px;
+        }
+        #servicios .cartas .Corte h3{
+        margin-left: 130px;
+        }
+        #servicios .cartas .carta .fotocolorcompleto{
+            margin-left: 180px;
+            margin-bottom: 5px;
+        }
+        #servicios .cartas .colorcomple {
+            margin-left: 160px;
+        }
+        
+        #servicios .cartas .tecbarba{
+            display: flex;
+        }
+
+        #servicios .cartas .tecnicos{
+            display: flex;
+            flex-direction: column;
+            margin-left: 90px;
+            
+        }
+        #servicios .cartas .barba{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+        #servicios .cartas .tecnicos p{
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+        #servicios .cartas .carta4 .fotobarba{
+            margin-left: 170px;
+        }
+        #servicios .cartas .barba h3{
+            margin-left: 165px;
+        }
+        #servicios .cartas .barba p{
+            margin-left: 170px;
+            margin-right: 10px;
+        }
+        #servicios .cartas .hair{
+            display: flex;
+        }
+        #servicios .cartas .peinados{
+            display: flex;
+            flex-direction: column;
+            margin-left: -120px ; 
+        }
+       
+        #servicios .cartas .peinados p{
+            margin-left: px;
+            margin-right: 0px;
+        }
+        #servicios .cartas .maquillajes{
+            display: flex;
+            flex-direction: column;
+            margin-left: 90px;  
+        }
+        #servicios .cartas .carta5 .fotomaquillaje{
+            margin-left: 10px;
+        }
+        #servicios .cartas .maquillajes .maquillaje{
+            margin-left: 10px;
+        }
+        #servicios .cartas .maquillajes p{
+            margin-right: 20px;
+            margin-left: 0px;
+            
+        }
+        #servicios .cartas h2{
+            margin-left: 160px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        
+        #servicios .cartas .hair2{
+            display: flex;
+        }
+        #servicios .cartas .hair2 .color2 p{
+            margin-right: 20px;
+        }
+        #servicios .cartas .corte2{
+            display: flex;
+            flex-direction: column;
+            margin-left: 130px;
+        }
+        #servicios .cartas .corte2 p{
+            margin-right: -10px;
+        }
+        #servicios .cartas .color2{
+            display: flex;
+            flex-direction: column;
+            margin-left: 90px;
+        }
+        #servicios .cartas .color2 {
+            margin-right: 0px;
+        }
+        #servicios .cartas .hair3{
+            display: flex;
+        }
+        #servicios .cartas .nutricion{
+            margin-left: 90px;
+        }
+        #servicios .cartas .alisado{
+            margin-left: 175px;
+        }
+        #servicios .cartas .alisado p{
+            margin-right: 0px;
+            margin-left: 10px;
+        }
+        #servicios .conteiner h2{
+            font-size: 3.8em;
+        }
+        #nuestrolugar .conteiner .primerafila{
+            display: flex;
+            flex-direction: row;
+        }
+        #nuestrolugar .conteiner .primerafila .fotoprimera{
+            width: 380px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .primerafila .fotosegunda{
+            width: 350px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .primerafila .fototercera{
+            width: 330px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .segundafila{
+            display: flex;
+            flex-direction: row;
+           
+        }
+        #nuestrolugar .conteiner .segundafila .fotocuarta{
+            width: 380px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .segundafila .fotoquinta{
+            width: 490px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .segundafila .fotosexta{
+            width: 460px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .tercerafila{
+            display: flex;
+            flex-direction: row;
+           
+
+        }
+        #nuestrolugar .conteiner .tercerafila .fotoseptima{
+            width: 380px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .tercerafila .fotooctava{
+            width: 490px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .tercerafila .fotonovena{
+            width: 460px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .cuartafila{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        #nuestrolugar .conteiner .cuartafila .fotodecima{
+            width: 540px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .cuartafila .fotoonce{
+            width: 480px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .cuartafila .fotodoce{
+            width: 460px;
+            height: 400px;
+        }
+        #contacto .conteiner{
+            margin-left:60px;
+        }
+        #contacto .conteiner h3{
+            font-size: 3.1em;
+        }
+        #contacto .conteiner h4{
+            font-size: 1.9em;
+        }
+        #contacto .conteiner h5{
+            font-size: 1.6em;
+        }
+        #nosotros .conteiner p{
+            font-weight: bold;
+        }
+        #nosotros .conteiner{
+            margin-left: 50px;
+        }
+        #nosotros .conteiner h2{
+            font-size: 3.0em;
+        }
+        #nosotros .conteiner h4{
+            font-size: 2.0em;
+        }
+        
+        footer .conteiner .redessociales{
+           margin-left: 320px;
+        }
+        footer .conteiner .redessociales .redes2{
+            
+          margin-left: 19px;
+        }
+        footer .conteiner .redessociales .redes3{
+            margin-left: 28px;
+        }
+        
+       }
+       @media (min-width: 1200px){
+
+      
+        
+        header .conteiner{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        header .logo{
+            font-size: 2.5em;
+        }
+        header nav{
+            flex-direction: row;
+            padding: 0;
+            
+        }
+
+        #hero{
+            background-size:1290px;
+            background-repeat: inherit;
+            height: 82vh;
+        }
+        #hero h1{
+            top:80px;
+        }
+        #hero .logoprincipal{
+            top: 243px;
+        }
+        #hero .logochico{
+            top: 395px;
+            right: 65px;
+            width: 35px;
+            height: 35px;
+        }
+        #hero .logocostado{
+            top: 337px;
+            left: 62px;
+            width: 35px;
+            height: 35px;
+        }
+        #hero .fotoinsta{
+            width: 48px;
+            height: 48px;
+        }
+        #hero .fotofacebook{
+            width: 47px;
+            height: 47px;
+        }
+        #servicios h2{
+        font-size: 3.6em;
+        }
+        #servicios .cartas h2{
+            margin-right: 50px;
+        }
+        #servicios .cartas .cartascorte{
+            display: flex;
+
+        }
+        #servicios .cartas .Corte{
+            display: flex;
+            flex-direction: column;
+            margin-left:30px;
+            
+        }
+        #servicios .cartas .cartacolor{
+            display: flex;
+            flex-direction: column;
+            margin-left: 140px;  
+        }
+        .conteiner .cartas .Corte p{
+            margin-left: 90px;
+            margin-right: 110px;
+        }
+        .conteiner .cartas .cartacolor p{
+           margin-left: 150px;
+           margin-right: 100px;
+        }
+        #servicios .cartas .carta .fotocorte{
+        margin-left: 120px;
+        }
+        #servicios .cartas .Corte h3{
+        margin-left: 130px;
+        }
+        #servicios .cartas .carta .fotocolorcompleto{
+            margin-left: 180px;
+            margin-bottom: 5px;
+        }
+        #servicios .cartas .colorcomple {
+            margin-left: 160px;
+        }
+        
+        #servicios .cartas .tecbarba{
+            display: flex;
+        }
+
+        #servicios .cartas .tecnicos{
+            display: flex;
+            flex-direction: column;
+            margin-left: 140px;
+            
+        }
+        #servicios .cartas .barba{
+            display: flex;
+            flex-direction: column;
+            margin-left: 250px;
+        }
+        #servicios .cartas .tecnicos p{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #servicios .cartas .carta4 .fotobarba{
+            margin-left: 170px;
+        }
+        #servicios .cartas .barba h3{
+            margin-left: 165px;
+        }
+        #servicios .cartas .barba p{
+            margin-left: 160px;
+            margin-right: 130px;
+        }
+        #servicios .cartas .hair{
+            display: flex;
+        }
+        #servicios .cartas h2{
+            margin-left: -0px;
+            
+        }
+        
+        #servicios .cartas .peinados{
+            display: flex;
+            flex-direction: column;
+            margin-right: 195px;
+        }
+       
+        #servicios .cartas .peinados p{
+            margin-left: 25px;
+            margin-right: 5px;
+        }
+        #servicios .cartas .maquillajes{
+            display: flex;
+            flex-direction: column;
+            margin-right: 260px;  
+        }
+        #servicios .cartas .carta5 .fotomaquillaje{
+            margin-left: 70px;
+        }
+        #servicios .cartas .maquillajes .maquillaje{
+            margin-left: 70px;
+        }
+        #servicios .cartas .maquillajes p{
+            margin-right: 50px;
+            margin-left: 10px;
+            
+        }
+        
+        #servicios .cartas .hair2{
+            display: flex;
+        }
+        #servicios .cartas .hair2 .color2 p{
+            margin-right: 280px;
+        }
+        #servicios .cartas .corte2{
+            display: flex;
+            flex-direction: column;
+            margin-left: 150px;
+        }
+        #servicios .cartas .corte2 p{
+            margin-right: 150px;
+        }
+        #servicios .cartas .color2{
+            display: flex;
+            flex-direction: column;
+            margin-left: 136px;
+        }
+        #servicios .cartas .color2 {
+            margin-right: 0px;
+        }
+        #servicios .cartas .hair3{
+            display: flex;
+        }
+        #servicios .cartas .nutricion{
+            margin-left: 135px;
+        }
+        #servicios .cartas .alisado{
+            margin-left: 440px;
+        }
+        #servicios .cartas .alisado p{
+            margin-right: 120px;
+            margin-left: -20px;
+        }
+        #servicios .conteiner h2{
+            font-size: 3.8em;
+        }
+        #nuestrolugar .conteiner .primerafila{
+            display: flex;
+            flex-direction: row;
+        }
+        #nuestrolugar .conteiner .primerafila .fotoprimera{
+            width: 450px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .primerafila .fotosegunda{
+            width: 450px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .primerafila .fototercera{
+            width: 460px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .segundafila{
+            display: flex;
+            flex-direction: row;
+           
+        }
+        #nuestrolugar .conteiner .segundafila .fotocuarta{
+            width: 450px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .segundafila .fotoquinta{
+            width: 450px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .segundafila .fotosexta{
+            width: 460px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .tercerafila{
+            display: flex;
+            flex-direction: row;
+           
+
+        }
+        #nuestrolugar .conteiner .tercerafila .fotoseptima{
+            width: 450px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .tercerafila .fotooctava{
+            width: 450px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .tercerafila .fotonovena{
+            width: 460px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .cuartafila{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        #nuestrolugar .conteiner .cuartafila .fotodecima{
+            width: 450px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .cuartafila .fotoonce{
+            width: 450px;
+            height: 400px;
+        }
+        #nuestrolugar .conteiner .cuartafila .fotodoce{
+            width: 460px;
+            height: 400px;
+        }
+        #contacto .conteiner{
+            margin-left: 140px;
+        }
+        #contacto .conteiner h3{
+            font-size: 3.1em;
+        }
+        #contacto .conteiner h4{
+            font-size: 1.9em;
+        }
+        #contacto .conteiner h5{
+            font-size: 1.6em;
+        }
+        #nosotros .conteiner p{
+            font-weight: bold;
+        }
+        #nosotros .conteiner{
+            margin-left: 140px;
+        }
+        #nosotros .conteiner h2{
+            font-size: 3.0em;
+        }
+        #nosotros .conteiner h4{
+            font-size: 2.0em;
+        }
+        
+        footer .conteiner .redessociales{
+           margin-left: 469px;
+        }
+        footer .conteiner .redessociales .redes2{
+            
+          margin-left: 19px;
+        }
+        footer .conteiner .redessociales .redes3{
+            margin-left: 28px;
+        }
+        
+       }
+       
+    
+   
+    
+    
+    
